@@ -1,94 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hockey's Time</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="max-w-screen-2xl mx-auto">
-        <!-- Nav Menu -->
-        <nav>
-            <div class="navbar bg-base-100">
-                <div class="navbar-start">
-                    <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h8m-8 6h16" />
-                            </svg>
-                        </div>
-                        <ul tabindex="0"
-                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-base font-semibold">
-                            <li><a>Home</a></li>
-                            <li><a>About</a></li>
-                            <li><a>Pages</a></li>
-                            <li><a>Blog</a></li>
-                            <li><a>Contact</a></li>
-                        </ul>
-                    </div>
-                    <div class="btn btn-ghost text-xl font-bold">
-                        <a>Hockey<span class="text-rose-400">'</span>s</a>
-                    </div>
-                </div>
-                <div class="navbar-center hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1 text-base font-semibold">
-                        <li><a class="text-rose-400">Home</a></li>
-                        <li><a>About</a></li>
-                        <li><a>Pages</a></li>
-                        <li><a>Blog</a></li>
-                        <li><a>Contact</a></li>
-                    </ul>
-                </div>
-                <div class="navbar-end">
-                    <button class="btn btn-ghost btn-circle mr-2 hidden md:block">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto h-5 w-5" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                        </svg>
-                    </button>
-                    <a class="btn text-base font-semibold text-white bg-rose-500">Get Ticket</a>
-                </div>
+      <!-- Nav Menu -->
+      <nav>
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-base font-semibold"
+              >
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Pages</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Contact</a></li>
+              </ul>
             </div>
-        </nav>
-        <!-- Carousel Section -->
-        <div class="container-hero">
-            <div class="carousel w-full hero-section rounded-2xl relative item-1">
-                <div id="slide1" class="carousel-item relative w-full">
-                    <img src="/image/1.png" class="w-full object-cover" />
-                    <div class="absolute flex justify-start gap-x-4 transform -translate-y-1/2 left-5 right-5 bottom-3">
-                        <a href="#slide2" class="btn btn-circle bg-black text-white border-black">❮</a>
-                        <a href="#slide2" class="btn btn-circle bg-black text-white border-black">❯</a>
-                    </div>
-                </div>
-                <div id="slide2" class="carousel-item relative w-full">
-                    <img src="/image/4.png" class="w-full object-cover" />
-                    <div class="absolute flex justify-start gap-x-4 transform -translate-y-1/2 left-5 right-5 bottom-3">
-                        <a href="#slide1" class="btn btn-circle bg-black text-white border-black">❮</a>
-                        <a href="#slide1" class="btn btn-circle bg-black text-white border-black">❯</a>
-                    </div>
-                </div>
+            <div class="btn btn-ghost text-xl font-bold">
+              <a>Hockey<span class="text-rose-400">'</span>s</a>
             </div>
-            <div class="item-2 p-8 bg-black text-white rounded-2xl lg:m-8">
-                <h4 class="text-xl">Meet all the heroes from the field</h4>
-                <p class="text-slate-400">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat
-                    dolor. Purus urna in sit nullam proin.</p>
-            </div>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 text-base font-semibold">
+              <li><a class="text-rose-400">Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Pages</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <button class="btn btn-ghost btn-circle mr-2 hidden md:block">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="mx-auto h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                />
+              </svg>
+            </button>
+            <a class="btn text-base font-semibold text-white bg-rose-500"
+              >Get Ticket</a
+            >
+          </div>
         </div>
-
+      </nav>
+      <!-- Carousel Section -->
+      <div class="container-hero">
+        <div class="carousel w-full hero-section rounded-2xl relative item-1">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="/image/1.png" class="w-full object-cover" />
+            <div
+              class="absolute flex justify-start gap-x-4 transform -translate-y-1/2 left-5 right-5 bottom-3"
+            >
+              <a
+                href="#slide2"
+                class="btn btn-circle bg-black text-white border-black"
+                >❮</a
+              >
+              <a
+                href="#slide2"
+                class="btn btn-circle bg-black text-white border-black"
+                >❯</a
+              >
+            </div>
+          </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="/image/4.png" class="w-full object-cover" />
+            <div
+              class="absolute flex justify-start gap-x-4 transform -translate-y-1/2 left-5 right-5 bottom-3"
+            >
+              <a
+                href="#slide1"
+                class="btn btn-circle bg-black text-white border-black"
+                >❮</a
+              >
+              <a
+                href="#slide1"
+                class="btn btn-circle bg-black text-white border-black"
+                >❯</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="item-2 p-8 bg-black text-white rounded-2xl lg:m-8">
+          <h4 class="text-xl">Meet all the heroes from the field</h4>
+          <p class="text-slate-400">
+            Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+            turpis placerat dolor. Purus urna in sit nullam proin.
+          </p>
+        </div>
+      </div>
     </header>
-    <main>
+    <main class="max-w-screen-2xl mx-auto">
+      <!-- Ring Dial Section -->
+      <section class="my-6">
+        <h2 class="section-title">Professional Hockeys Club</h2>
+        <p class="prm-p">
+          Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
+          placerat dolor. Purus urna in sit nullam proin.
+        </p>
+        <div
+          class="flex flex-col gap-3 justify-around my-8 md:flex-row md:gap-x-16"
+        >
+          <div class="flex flex-col items-center">
+            <div
+              class="radial-progress text-xl font-medium"
+              style="--value: 87; color: #ff4240"
+              role="progressbar"
+            >
+              87%
+            </div>
+            <h3 class="text-xl font-semibold my-2">Prayer Facility</h3>
+            <p class="prm-p">
+              Amet consectetur. Condimentum dignissim adipiscing.
+            </p>
+          </div>
+          <div class="flex flex-col items-center">
+            <div
+              class="radial-progress text-xl font-medium"
+              style="--value: 95; color: #49d293"
+              role="progressbar"
+            >
+              95%
+            </div>
+            <h3 class="text-xl font-semibold my-2">Experienced Coach</h3>
+            <p class="prm-p">
+              Amet consectetur. Condimentum dignissim adipiscing.
+            </p>
+          </div>
+          <div class="flex flex-col items-center">
+            <div
+              class="radial-progress text-xl font-medium"
+              style="--value: 90; color: #ffb546"
+              role="progressbar"
+            >
+              90%
+            </div>
+            <h3 class="text-xl font-semibold my-2">Senior Player</h3>
+            <p class="prm-p">
+              Amet consectetur. Condimentum dignissim adipiscing.
+            </p>
+          </div>
+          <div class="flex flex-col items-center">
+            <div
+              class="radial-progress text-xl font-medium"
+              style="--value: 80; color: #4c8df1"
+              role="progressbar"
+            >
+              80%
+            </div>
+            <h3 class="text-xl font-semibold my-2">Training Ground</h3>
+            <p class="prm-p">
+              Amet consectetur. Condimentum dignissim adipiscing.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Program Section -->
+      <section>
+        <h2 class="section-title">Program Sections</h2>
+        <p class="prm-p">
+          Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
+          placerat dolor. Purus urna in sit nullam proin.
+        </p>
+        <div class="grid gap-y-4 md:grid-cols-2 md:grid-rows-2 md:gap-4">
+          <div class="program-1 p-6 flex flex-col justify-end md:col-span-1">
+            <h3 class="text-2xl text-white font-extrabold">Junior Program</h3>
+            <p class="text-white font-medium leading-6 my-4">
+              Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+              enim sagittis turpis in magna. Id et sed euismod natoque amet nunc
+              morbi nulla. Tortor congue sed et in.
+            </p>
+            <button
+              class="btn w-44 font-semibold text-white bg-rose-500 border-transparent"
+            >
+              Register Now!
+            </button>
+          </div>
+          <div class="program-2 p-6 flex flex-col justify-end md:col-span-1">
+            <h3 class="text-2xl text-white font-extrabold">Teenager Program</h3>
+            <p class="text-white font-medium leading-6 my-4">
+              Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+              enim sagittis turpis in magna. Id et sed euismod natoque amet nunc
+              morbi nulla. Tortor congue sed et in.
+            </p>
+            <button
+              class="btn w-44 font-semibold text-white bg-rose-500 border-transparent"
+            >
+              Register Now!
+            </button>
+          </div>
+          <div class="program-3 p-6 flex flex-col justify-end md:col-span-2">
+            <h3 class="text-2xl text-white font-extrabold">
+              Professional Program
+            </h3>
+            <p class="text-white font-medium leading-6 my-4">
+              Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+              enim sagittis turpis in magna. Id et sed euismod natoque amet nunc
+              morbi nulla. Tortor congue sed et in.
+            </p>
+            <button
+              class="btn w-44 font-semibold text-white bg-rose-500 border-transparent"
+            >
+              Register Now!
+            </button>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer>
-
-    </footer>
-</body>
-
+    <footer></footer>
+  </body>
 </html>
